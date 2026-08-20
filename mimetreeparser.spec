@@ -8,7 +8,7 @@
 %define wdevname %mklibname KPim6MimeTreeParserWidgets -d
 
 Name: mimetreeparser
-Version:	26.04.3
+Version:	26.08.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -43,7 +43,7 @@ BuildRequires: cmake(KF6CalendarCore)
 BuildRequires: cmake(KF6Codecs)
 BuildRequires: cmake(KF6I18n)
 BuildRequires: cmake(KF6WidgetsAddons)
-BuildRequires: cmake(KPim6Mime)
+BuildRequires: cmake(KF6Mime)
 BuildRequires: cmake(KPim6Mbox)
 BuildRequires: cmake(KPim6Libkleo)
 BuildRequires: cmake(KF6ColorScheme)
